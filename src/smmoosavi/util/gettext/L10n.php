@@ -37,7 +37,7 @@ namespace smmoosavi\util\gettext {
             if (is_null(self::$locale_reader)) {
                 return $single;
             }
-            return self::$locale_reader->ngettext($single, $pluar, $number);
+            return self::$locale_reader->ngettext($single, $pluar, (int)$number);
         }
     }
 }
